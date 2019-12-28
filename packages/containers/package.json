@@ -1,0 +1,11 @@
+{
+  "name": "@app/containers",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@app/components": "1.0.0"
+  },
+  "devDependencies": {
+    "@app/components": "1.0.0"
+  }
+}
