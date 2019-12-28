@@ -5,7 +5,7 @@ import { Configuration, RuleSetRule } from "webpack";
 // TODO
 const pathName = "packages/containers";
 
-const src = path.resolve(__dirname, `${pathName}/src`);
+const entry = path.resolve(__dirname, `${pathName}/lib`);
 const template = path.resolve(__dirname, "index.html");
 const dist = path.resolve(__dirname, "dist");
 
@@ -19,7 +19,7 @@ const rules: RuleSetRule[] = [
 
 const configuration: Configuration = {
   mode: "development",
-  entry: src,
+  entry,
   output: {
     path: dist,
     filename: "bundle.js"
