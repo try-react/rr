@@ -1,5 +1,5 @@
 import { renderHook, act } from "@testing-library/react-hooks";
-import { useCount2 } from "../useCount2";
+import { useCount2 } from ".";
 
 describe("useCount2", () => {
   it("初期値", () => {
