@@ -19,6 +19,8 @@ TODO
 ### 全体像
 ![overview](https://user-images.githubusercontent.com/16768208/71544846-28ebe380-29c7-11ea-8c9a-78ca3a0274db.png "overview")
 
+[👀よりくわしく](https://github.com/try-react/rr/tree/master/packages/containers/src/store)
+
 ### 詳細
 
 `redux-toolkit` の `configureStore` 使用している  
