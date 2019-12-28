@@ -1,5 +1,5 @@
 import React from "react";
-import { Count as IC } from "@app/components/src/Count";
+import { Count as IC } from "@app/components/other/Count";
 import { useCnt, useOperations } from "~/containers/hooks";
 
 export const Count = () => {
