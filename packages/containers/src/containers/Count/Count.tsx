@@ -7,5 +7,10 @@ export const Count = () => {
     ...useCnt(),
     ...useOperations()
   };
-  return <IC {...props} />;
+  return (
+    <>
+      Reudx 使ってるよ
+      <IC {...props} />
+    </>
+  );
 };
