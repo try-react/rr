@@ -59,6 +59,7 @@
     },
     "cz-emoji": {
       "scopes": [
+        "all",
         "components",
         "containers"
       ],
