@@ -1,13 +1,15 @@
+# rr
+
 コンポーネントを、モノレポ化した React
 
 
-### packages/components
+## packages/components
 Presentational component 置き場
 
 TODO
 後々は コンポーネントカタログ入れてもいいね
 
-### packages/containers
+## packages/containers
 
 Container component 置き場
 
