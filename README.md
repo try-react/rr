@@ -20,7 +20,7 @@ TODO 後々は コンポーネントカタログ入れてもいいね
 
 ---
 
-## todo や isssue 管理  
+## todo 管理  
 https://github.com/JasonEtco/todo
 ```ts
 /**
