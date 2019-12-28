@@ -1,3 +1,16 @@
+### 全体像
+
+<div><img src="https://user-images.githubusercontent.com/16768208/71545813-e16b5480-29d2-11ea-8233-33b120dfb2a1.gif" width=500></div>
+
+> (middlewaresは使ってない)
+
+<div><img src="https://user-images.githubusercontent.com/16768208/71544846-28ebe380-29c7-11ea-8c9a-78ca3a0274db.png" width=500></div>
+
+### 詳細
+
+`redux-toolkit` の `configureStore` 使用している  
+つまり `Reducer` は 1つ
+
 ## Action
 
 Actionは起こったイベントを表す
