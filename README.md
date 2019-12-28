@@ -15,3 +15,5 @@ TODO
 ## packages/containers
 
 `Container component` 置き場
+
+[👀よりくわしく](https://github.com/try-react/rr/tree/master/packages/containers/src/store)	
