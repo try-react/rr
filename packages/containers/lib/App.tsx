@@ -1,21 +1,13 @@
 import React from "react";
-import { Provider } from "react-redux";
-import { Count } from "~/containers/wrapComponent/Count";
-import { Count2 } from "~/containers/wrapComponent/Count2";
-import { Count3 } from "~/containers/wrapComponent/Count3";
-import { store } from "~/containers/store";
-import { Provider as CTXProvider } from "~/containers/context";
+import { Count } from "@app/components/lib/presentational/other/Count";
+import { useCount } from "~/containers/hooks";
+import { useCount2 } from "~/containers/hooks";
+import { useCount3 } from "~/containers/hooks";
 
-export const App = () => {
-  return (
-    <>
-      <Provider store={store}>
-        <Count />
-      </Provider>
-      <Count2 />
-      <CTXProvider>
-        <Count3 />
-      </CTXProvider>
-    </>
-  );
-};
+export const App = () => (
+  <>
+    <Count {...useCount()} />
+    <Count {...useCount2()} />
+    <Count {...useCount3()} />
+  </>
+);

@@ -1,9 +1,9 @@
 import { useCallback } from "react";
-import { useCnt2, useOperations2 } from "~/containers/hooks";
+import { useCnt, useOperations } from "~/containers/hooks/context";
 
 export const useCount3 = () => {
-  const { onIncrement, onDecrement, set5 } = useOperations2();
-  const value = useCnt2();
+  const { onIncrement, onDecrement, set5 } = useOperations();
+  const value = useCnt();
 
   return {
     value,
