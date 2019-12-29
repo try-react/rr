@@ -2,7 +2,7 @@ import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import { Configuration, RuleSetRule } from "webpack";
 
-// TODO
+// TODO かんきょーへんすーからもらっとく？
 const pathName = "packages/containers";
 
 const entry = path.resolve(__dirname, `${pathName}/lib`);
