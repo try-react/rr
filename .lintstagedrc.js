@@ -1,4 +1,9 @@
 module.exports = {
-  "**/*.ts?(x)": 'eslint --fix',
-  "**/*.js": 'eslint --fix'
+  "**/*.ts?(x)": [
+    'yarn eslint --fix'
+  ],
+  "**/*.test.ts?(x)": [
+    'yarn test --findRelatedTests',
+  ],
+  "**/*.js": 'yarn eslint --fix'
 };
