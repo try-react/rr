@@ -10,7 +10,9 @@
     "demo": "http-server dist",
     "dev": "webpack-dev-server",
     "build": "webpack",
-    "test": "yarn workspace @app/containers test"
+    "test": "run-p test:*",
+    "test:containers": "yarn workspace @app/containers test",
+    "test:components": "yarn workspace @app/components test"
   },
   "dependencies": {
     "@reduxjs/toolkit": "1.2.1",
@@ -37,6 +39,7 @@
     "@typescript-eslint/parser": "2.13.0",
     "babel-loader": "8.0.6",
     "babel-plugin-module-resolver": "4.0.0",
+    "babel-plugin-react-remove-properties": "0.3.0",
     "commitizen": "4.0.3",
     "cz-emoji": "1.1.2",
     "eslint": "6.8.0",

@@ -26,4 +26,14 @@ const plugins = [
   ]
 ];
 
-module.exports = { presets, plugins };
+const env = {
+  production: {
+    // data-test="hoge"が消える つまり神
+    plugins: ["react-remove-properties"]
+  }
+};
+module.exports = {
+  presets,
+  plugins,
+  env
+};

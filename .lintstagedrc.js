@@ -3,7 +3,9 @@ module.exports = {
     'yarn eslint --fix'
   ],
   "**/*.test.ts?(x)": [
-    'yarn test --findRelatedTests',
+    // yarn test にしたいが configパスの都合上 個別にする
+    'yarn test:containers --findRelatedTests',
+    'yarn test:components --findRelatedTests',
   ],
   "**/*.js": 'yarn eslint --fix'
 };

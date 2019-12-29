@@ -13,13 +13,12 @@ export const Count: React.FC<Props> = ({
   onDecrement,
   set5
 }) => (
-  <div>
-    <div>カウント値：{value}</div>
+  <>
+    <div data-test="value">カウント値：{value}</div>
     <div>
-      <button type="button" onClick={set5}>
+      <button data-test="set5" type="button" onClick={set5}>
         set5
       </button>
-
       <button type="button" onClick={onIncrement}>
         onIncrement
       </button>
@@ -27,5 +26,5 @@ export const Count: React.FC<Props> = ({
         onDecrement
       </button>
     </div>
-  </div>
+  </>
 );
