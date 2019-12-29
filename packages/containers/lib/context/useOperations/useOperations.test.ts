@@ -1,7 +1,7 @@
 import { useCnt } from "..";
 import { useOperations } from ".";
 import { renderHook, act } from "@testing-library/react-hooks";
-import { wrapper } from "~/test/wrapper";
+import { wrapper } from "@app/test/lib/wrapper";
 
 describe("useCnt", () => {
   const hooks = () => ({

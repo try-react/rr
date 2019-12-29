@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Context } from "~/containers/context";
+import { Context } from "@app/containers/lib/context";
 
 const useSelectors = () => useContext(Context).state;
 

@@ -1,13 +1,6 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "rootDir": ".",
-    // 参照され
-    "composite": true,
-  },
-  "references": [ // 参照する
-    {
-      "path": "../containers"
-    }
-  ]
+    "rootDir": "."
+  }
 }

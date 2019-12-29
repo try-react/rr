@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import { useCnt, useOperations } from "~/containers/context";
+import { useCnt, useOperations } from "@app/containers/lib/context";
 
 export const useCount3 = () => {
   const { onIncrement, onDecrement, set5 } = useOperations();

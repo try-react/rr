@@ -1,7 +1,7 @@
 import React from "react";
 import { Provider } from "react-redux";
-import { store } from "~/containers/redux";
-import { Provider as CTXProvider } from "~/containers/context";
+import { store } from "@app/containers/lib/redux";
+import { Provider as CTXProvider } from "@app/containers/lib/context";
 
 export const wrapper: React.FC = ({ children }) => (
   <CTXProvider>{children}</CTXProvider>

@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { useCallback } from "react";
-import { actions } from "~/containers/redux";
+import { actions } from "@app/containers/lib/_ctx-redux";
 
 const useCallbackDispatch = (dispatch = useDispatch()) => (f: Function) =>
   useCallback(() => dispatch(f()), []);

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Context, actions } from "~/containers/context";
+import { Context, actions } from "@app/containers/lib/context";
 
 export const useOperations = (dispatch = useContext(Context).dispatch) => ({
   onIncrement: () => dispatch(actions.increment()),

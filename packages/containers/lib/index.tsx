@@ -1,12 +1,13 @@
 import React from "react";
 import { render } from "react-dom";
-import { App } from "~/containers/App";
-import { Provider as CTXProvider } from "~/containers/context";
 import { Provider } from "react-redux";
-import { store } from "~/containers/redux";
+import { store } from "./redux";
+import { Provider as CTXProvider } from "./context";
+import { App } from "./App";
 
 const target = document.getElementById("root");
 render(
+  // Redux と Context試すために こんな感じ 😭
   <Provider store={store}>
     <CTXProvider>
       <App />

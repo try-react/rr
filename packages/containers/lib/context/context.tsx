@@ -4,7 +4,7 @@ import {
   initialState,
   reducer,
   actions as _actions
-} from "~/containers/_ctx-redux";
+} from "@app/containers/lib/_ctx-redux";
 
 export const actions = _actions;
 

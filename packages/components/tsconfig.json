@@ -2,7 +2,5 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "rootDir": ".",
-    // 参照され
-    "composite": true,
   },
 }

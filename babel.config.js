@@ -12,20 +12,6 @@ const presets = [
   "@babel/preset-typescript"
 ];
 
-const plugins = [
-  [
-    "module-resolver",
-    {
-      root: ["./packages"],
-      alias: {
-        "~/containers": path.resolve(__dirname, "packages/containers/lib"),
-        "~/components": path.resolve(__dirname, "packages/components/lib"),
-        "~/test": path.resolve(__dirname, "packages/test/lib")
-      }
-    }
-  ]
-];
-
 const env = {
   production: {
     // data-test="hoge"が消える つまり神
@@ -34,6 +20,5 @@ const env = {
 };
 module.exports = {
   presets,
-  plugins,
   env
 };
