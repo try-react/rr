@@ -8,14 +8,14 @@
 
 ## packages/components
 
-`Presentational component` 置き場
+`Presentational component` 置き場  
 TODO 後々は コンポーネントカタログ入れてもいいね
 
 ## packages/containers
 
 `Container component` 置き場
 
-[👀よりくわしく](https://github.com/try-react/rr/tree/master/packages/containers/src/store)	
+[👀よりくわしく](https://github.com/try-react/rr/tree/master/packages/containers/lib/_ctx-redux)	
 
 
 ---
