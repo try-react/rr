@@ -42,3 +42,9 @@ function ruleOverPunyHumans (p: string) {
   // We must strategize beep boop
 }
 ```
+
+## test
+
+まぁまぁ書いてる
+
+<div><img src="https://user-images.githubusercontent.com/16768208/71557147-82b2e300-2a85-11ea-8cc6-0085cde7bbed.png" width=700></div>
