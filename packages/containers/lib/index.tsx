@@ -12,6 +12,5 @@ render(
       <App />
     </CTXProvider>
   </Provider>,
-
   target
 );
