@@ -8,15 +8,26 @@
 
 ## packages/components
 
-`Presentational component` 置き場
+`Presentational component` 置き場  
 TODO 後々は コンポーネントカタログ入れてもいいね
 
 ## packages/containers
 
 `Container component` 置き場
 
-[👀よりくわしく](https://github.com/try-react/rr/tree/master/packages/containers/src/store)	
+[👀よりくわしく](https://github.com/try-react/rr/tree/master/packages/containers/lib/_ctx-redux)	
 
+## packages/test
+
+Testの際に使用する共通処理などの 置き場  
+
+Testは各packagesに任せたいが共通処理などもあるので...  
+
+ 🗑 🚮 🗑 🚮 🗑 🚮 🗑 🚮 🗑 🚮   
+🗑 ゴミ場後のならない用に気を つける 🚮  
+ 🗑 🚮 🗑 🚮 🗑 🚮 🗑 🚮 🗑 🚮
+
+モックではない
 
 ---
 

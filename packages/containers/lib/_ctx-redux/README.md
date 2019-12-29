@@ -1,3 +1,7 @@
+## ここは？
+Context API と Reduxを同時に使う為 (本来はやめたほうがいい)   
+`initialState`, `actions`, `reducer`  などが冗長なのでここでまとめて定義
+
 ### 全体像
 
 <div><img src="https://user-images.githubusercontent.com/16768208/71545813-e16b5480-29d2-11ea-8233-33b120dfb2a1.gif" width=500></div>
