@@ -19,7 +19,8 @@ const plugins = [
       root: ["./packages"],
       alias: {
         "~/containers": path.resolve(__dirname, "packages/containers/lib"),
-        "~/components": path.resolve(__dirname, "packages/components/lib")
+        "~/components": path.resolve(__dirname, "packages/components/lib"),
+        "~/test": path.resolve(__dirname, "packages/test/lib")
       }
     }
   ]

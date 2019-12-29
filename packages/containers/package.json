@@ -11,6 +11,6 @@
     "react-test-renderer": "16.12.0"
   },
   "devDependencies": {
-    "@app/components": "1.0.0"
+    "@app/test": "1.0.0"
   }
 }

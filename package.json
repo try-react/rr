@@ -61,7 +61,8 @@
       "scopes": [
         "all",
         "components",
-        "containers"
+        "containers",
+        "test"
       ],
       "types": [
         {
