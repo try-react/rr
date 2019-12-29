@@ -6,8 +6,11 @@ import { useCount3 } from "~/containers/hooks";
 
 export const App = () => (
   <>
+    useDispatch, useSelector
     <Count {...useCount()} />
+    useState
     <Count {...useCount2()} />
+    useContext
     <Count {...useCount3()} />
   </>
 );

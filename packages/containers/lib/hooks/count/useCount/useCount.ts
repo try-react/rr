@@ -1,4 +1,4 @@
-import { useCnt, useOperations } from "~/containers/hooks/redux";
+import { useCnt, useOperations } from "~/containers/redux";
 
 export const useCount = () => ({
   ...useCnt(),

@@ -1,9 +1,9 @@
 import React from "react";
 import { renderHook } from "@testing-library/react-hooks";
 import { Provider } from "react-redux";
-import { store } from "~/containers/store";
+import { store } from "~/containers/redux";
 import { useCnt } from ".";
-import { useOperations } from "~/containers/hooks";
+import { useOperations } from "~/containers/hooks/redux";
 
 describe("useCnt", () => {
   it("初期値", () => {
