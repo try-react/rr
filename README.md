@@ -9,30 +9,24 @@ TODO 後々は コンポーネントカタログ入れてもいいね
 
 `Container component` 置き場
 
-[👀よりくわしく](https://github.com/try-react/rr/tree/master/packages/containers/lib/_ctx-redux)	
+[👀 よりくわしく](https://github.com/try-react/rr/tree/master/packages/containers/lib/_ctx-redux)
 
-## packages/test
+## packages/shared
 
-Testの際に使用する共通処理などの 置き場  
-
-Testは各packagesに任せたいが共通処理などもあるので...  
-
- 🗑 🚮 🗑 🚮 🗑 🚮 🗑 🚮 🗑 🚮   
-🗑 ゴミ場後のならない用に気を つける 🚮  
- 🗑 🚮 🗑 🚮 🗑 🚮 🗑 🚮 🗑 🚮
-
-モックではない
+共通処理などの 置き場
 
 ---
 
-## todo 管理  
+## todo 管理
+
 https://github.com/JasonEtco/todo
+
 ```ts
 /**
  * TODO Take over the world
  * BODY Humans are weak; Robots are strong. We must cleanse the world of the virus that is humanity.
  */
-function ruleOverPunyHumans (p: string) {
+function ruleOverPunyHumans(p: string) {
   // We must strategize beep boop
 }
 ```
