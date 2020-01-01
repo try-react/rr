@@ -22,5 +22,6 @@ export const App = () => (
       useContext
       <Count {...useCount3()} />
     </>
+    <>.env - {process.env.FOO}</>
   </>
 );
