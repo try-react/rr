@@ -12,7 +12,11 @@
     "build": "webpack",
     "test": "run-p test:*",
     "test:containers": "yarn workspace @app/containers test",
-    "test:components": "yarn workspace @app/components test"
+    "test:components": "yarn workspace @app/components test",
+    "valid": "run-p valid:*",
+    "valid:test": "yarn test",
+    "valid:tsc": "yarn tsc --noEmit",
+    "_": ""
   },
   "dependencies": {
     "@reduxjs/toolkit": "1.2.1",
@@ -64,7 +68,7 @@
         "all",
         "components",
         "containers",
-        "test"
+        "shared"
       ],
       "types": [
         {

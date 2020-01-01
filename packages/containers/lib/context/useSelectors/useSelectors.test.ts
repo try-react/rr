@@ -1,6 +1,6 @@
 import { useCnt } from ".";
 import { renderHook } from "@testing-library/react-hooks";
-import { wrapper } from "@app/test/lib/wrapper";
+import { wrapper } from "@app/shared/lib/wrapper";
 
 describe("useCnt", () => {
   it("初期値", () => {
