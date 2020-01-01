@@ -10,7 +10,7 @@
     "demo": "http-server dist",
     "dev": "webpack-dev-server",
     "build": "webpack",
-    "test": "dotenv -e .env run-p test:*",
+    "test": "run-p test:*",
     "test:containers": "yarn workspace @app/containers test",
     "test:components": "yarn workspace @app/components test",
     "valid": "run-p valid:*",
