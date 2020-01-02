@@ -3,9 +3,9 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 import { Configuration, RuleSetRule } from "webpack";
 import Dotenv from "dotenv-webpack";
 
-const entry = path.resolve(__dirname, "packages/containers/lib");
+const entry = path.resolve(__dirname, "lib");
 const template = path.resolve(__dirname, "index.html");
-const dist = path.resolve(__dirname, "dist");
+const dist = path.resolve(__dirname, "../../dist");
 
 const rules: RuleSetRule[] = [
   {
