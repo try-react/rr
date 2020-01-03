@@ -29,15 +29,15 @@ const CountX: React.FC<Props> = ({ value, set5, onDecrement, onIncrement }) => (
       <Count.SimpleLabel value={value} />
     </Decoration>
 
-    <Count.CountButtons.Set5 onClick={set5} txt={" 五 をセット"} />
-    <Count.CountButtons.Increment
-      onClick={onIncrement}
-      txt={"カウントアップ 👍"}
-    />
-    <Count.CountButtons.Decrement
-      onClick={onDecrement}
-      txt={"カウントダウン 👇"}
-    />
+    <Count.CountButtons.Set5 onClick={set5}>5をセット</Count.CountButtons.Set5>
+
+    <Count.CountButtons.Increment onClick={onIncrement}>
+      カウントアップ 👍
+    </Count.CountButtons.Increment>
+
+    <Count.CountButtons.Decrement onClick={onDecrement}>
+      カウントダウン 👇
+    </Count.CountButtons.Decrement>
   </>
 );
 

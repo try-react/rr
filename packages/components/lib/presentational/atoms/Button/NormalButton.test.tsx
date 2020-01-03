@@ -3,12 +3,11 @@ import { shallow } from "enzyme";
 import { NormalButton } from ".";
 
 const props = {
-  onClick: jest.fn,
-  txt: ""
+  onClick: jest.fn
 };
 
 const spy = jest.spyOn(props, "onClick");
-const wrapper = shallow(<NormalButton {...props} />);
+const wrapper = shallow(<NormalButton {...props}>aaa</NormalButton>);
 
 it("click", () => {
   const r = wrapper.find('[data-test="foo"]');

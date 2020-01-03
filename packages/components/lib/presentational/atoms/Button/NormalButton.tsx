@@ -2,12 +2,12 @@ import React from "react";
 
 export type Props = {
   onClick: () => void;
-  txt: string | number;
+  children: string | number;
 };
 
-const _NormalButton: React.FC<Props> = ({ onClick, txt }) => (
+const _NormalButton: React.FC<Props> = ({ onClick, children }) => (
   <button data-test="foo" type="button" onClick={onClick}>
-    {txt}
+    {children}
   </button>
 );
 
