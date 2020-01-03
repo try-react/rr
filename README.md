@@ -52,3 +52,5 @@ try-react/packages/XXX/jest.config.js が読まれる事が大事
 try-react/jest.config.js
 
 try-react/packages/XXX/jest.config.js が読まれない事がつらい
+
+TODO ディレクトリ構成変更 https://weblike-curtaincall.ssl-lolipop.jp/blog/?p=2056
