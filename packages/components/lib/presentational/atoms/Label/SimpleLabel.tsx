@@ -1,11 +1,9 @@
 import React from "react";
 
-type Props = {
+export type SimpleLabelProps = {
   value: string | number;
 };
 
-const _SimpleLabel: React.FC<Props> = ({ value }) => (
+export const SimpleLabel: React.FC<SimpleLabelProps> = ({ value }) => (
   <span data-test="value">{value}</span>
 );
-
-export const SimpleLabel = (p: Props) => _SimpleLabel(p);
