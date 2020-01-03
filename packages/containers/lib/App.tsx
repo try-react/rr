@@ -8,9 +8,16 @@ import { Decoration } from "@app/components/lib/presentational/atoms/Label";
 
 export const App = () => (
   <>
+    <p>useDispatch, useSelector</p>
     <CountX {...useCount()} />
+
+    <p>useState</p>
     <CountX {...useCount2()} />
+
+    <p>useContext</p>
     <CountX {...useCount3()} />
+
+    <p>useReducer</p>
     <CountX {...useCount4()} />
   </>
 );
@@ -22,16 +29,17 @@ const CountX: React.FC<Props> = ({ value, set5, onDecrement, onIncrement }) => (
       <Count.SimpleLabel value={value} />
     </Decoration>
 
-    <Count.CountButtons.Set5 onClick={set5} txt={"5をセット"} />
+    <Count.CountButtons.Set5 onClick={set5} txt={" 五 をセット"} />
     <Count.CountButtons.Increment
       onClick={onIncrement}
-      txt={"カウントアップ"}
+      txt={"カウントアップ 👍"}
     />
     <Count.CountButtons.Decrement
       onClick={onDecrement}
-      txt={"カウントダウン"}
+      txt={"カウントダウン 👇"}
     />
   </>
 );
 
 // TODO Xstate
+// TODO router
