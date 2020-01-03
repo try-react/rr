@@ -6,7 +6,7 @@ export type Props = {
 };
 
 const _NormalButton: React.FC<Props> = ({ onClick, txt }) => (
-  <button data-test="set5" type="button" onClick={onClick}>
+  <button data-test="foo" type="button" onClick={onClick}>
     {txt}
   </button>
 );
