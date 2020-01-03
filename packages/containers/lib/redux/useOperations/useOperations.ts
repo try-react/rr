@@ -1,12 +1,11 @@
 import { useDispatch } from "react-redux";
 import { actions } from "@app/containers/lib/_ctx-redux";
 
-export const useOperations = () => {
-  const d = useDispatch();
+const useCallbackDispatch = (dispatch = useDispatch()) => (f: Function) => () =>
+  dispatch(f());
 
-  return {
-    onIncrement: () => d(actions.increment),
-    onDecrement: () => d(actions.decrement),
-    set5: () => d(() => actions.setX(5))
-  };
-};
+export const useOperations = (w = useCallbackDispatch()) => ({
+  onIncrement: w(actions.increment),
+  onDecrement: w(actions.decrement),
+  set5: w(() => actions.setX(5))
+});
