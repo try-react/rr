@@ -1,3 +1,3 @@
-export * from "./context";
+export * from "./Context";
 export * from "./useSelectors";
 export * from "./useOperations";

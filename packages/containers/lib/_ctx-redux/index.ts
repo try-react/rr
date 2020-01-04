@@ -20,3 +20,5 @@ export const { actions, reducer } = createSlice({
     })
   }
 });
+
+export type Actions = typeof actions;

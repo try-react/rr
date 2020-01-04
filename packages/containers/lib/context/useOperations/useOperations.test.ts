@@ -10,7 +10,7 @@ describe("useCnt", () => {
   });
 
   it("onIncrement", () => {
-    const { result } = renderHook(hooks, { wrapper: wrapper });
+    const { result } = renderHook(hooks, { wrapper });
 
     act(() => {
       result.current.operations.onIncrement();
@@ -22,7 +22,7 @@ describe("useCnt", () => {
   });
 
   it("onDecrement", () => {
-    const { result } = renderHook(hooks, { wrapper: wrapper });
+    const { result } = renderHook(hooks, { wrapper });
 
     act(() => {
       result.current.operations.onDecrement();
@@ -36,7 +36,7 @@ describe("useCnt", () => {
   });
 
   it("set5", () => {
-    const { result } = renderHook(hooks, { wrapper: wrapper });
+    const { result } = renderHook(hooks, { wrapper });
 
     act(() => {
       result.current.operations.set5();
