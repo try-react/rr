@@ -1,27 +1,60 @@
-import React from "react";
-import { HandleCount } from "@app/components/lib/presentational/ecosystems";
-
+import React, { Suspense } from "react";
+import { BrowserRouter } from "react-router-dom";
 import {
-  useCount,
-  useCount2,
-  useCount3,
-  useCount4
-} from "@app/containers/lib/hooks";
+  Routers,
+  TopPage,
+  Count1Page,
+  Count2Page,
+  Count3Page,
+  Count4Page
+} from "./pages/RoutersByRRD";
 
-// TODO Xstate
-// TODO router
-export const App = () => (
-  <>
-    <p>useDispatch, useSelector</p>
-    <HandleCount {...useCount()} />
+import { mount, route, lazy } from "navi";
+import { Router as ReactNaviRouter, View } from "react-navi";
+import { NotFoundError } from "navi";
+const fetchSome = () => new Promise(resolve => setTimeout(resolve, 5000));
 
-    <p>useState</p>
-    <HandleCount {...useCount2()} />
+const routes = mount({
+  "/count3": route({
+    title: "Home",
+    getData: () => fetchSome(),
+    getView: () =>
+      import("./pages").then(r => {
+        return (
+          <>
+            <r.Count3 />
+            <r.Count3Clone />
+            <r.Count3W />
+          </>
+        );
+      })
+  })
+});
 
-    <p>useContext</p>
-    <HandleCount {...useCount3()} />
+export const App = () => {
+  return (
+    <>
+      <BrowserRouter>
+        <Routers />
+        <TopPage />
+        <Count1Page />
+        <Count2Page />
+        <Count3Page />
+        <Count4Page />
+      </BrowserRouter>
 
-    <p>useReducer</p>
-    <HandleCount {...useCount4()} />
-  </>
-);
+      {/* <BrowserRouter>
+        <Routers />
+        <Count2Page />
+        <Count3Page />
+      </BrowserRouter>
+      <ReactNaviRouter routes={routes}>
+        <Suspense
+          fallback={<div> 💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦💦 </div>}
+        >
+          <View />
+        </Suspense>
+      </ReactNaviRouter> */}
+    </>
+  );
+};
