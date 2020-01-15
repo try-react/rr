@@ -19,9 +19,11 @@
     "_": ""
   },
   "dependencies": {
+    "@bit/barontommy.react-tutorial.normal-button": "0.0.4",
     "@reduxjs/toolkit": "1.2.1",
     "@types/jest": "24.0.25",
     "@types/react-redux": "7.1.5",
+    "bit-bin": "14.7.1",
     "eslint-plugin-jest": "23.3.0",
     "html-webpack-plugin": "3.2.0",
     "jest": "24.9.0",
@@ -536,5 +538,11 @@
         }
       ]
     }
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react-typescript@3.1.28"
+    },
+    "packageManager": "yarn"
   }
 }
