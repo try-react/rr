@@ -5,5 +5,5 @@ import { actions } from "@app/containers/lib/_ctx-redux";
 export const useOperations = (dispatch = useContext(Context).dispatch) => ({
   onIncrement: () => dispatch(actions.increment()),
   onDecrement: () => dispatch(actions.decrement()),
-  set5: () => dispatch(actions.setX(5))
+  set5: () => dispatch(actions.setX({ foo: 5 }))
 });

@@ -1,10 +1,9 @@
-import { ActionType } from "typesafe-actions";
 import { initialState, Actions } from "@app/containers/lib/_ctx-redux";
 import { Dispatch, createContext } from "react";
 
-type CreateContext = {
+export type CreateContext = {
   state: typeof initialState;
-  dispatch: Dispatch<ActionType<Actions>>;
+  dispatch: Dispatch<Actions>;
 };
 
 export const Context = createContext<CreateContext>({

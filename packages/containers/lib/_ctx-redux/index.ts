@@ -1,4 +1,7 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import produce, { Draft } from "immer";
+import { deprecated, createReducer, ActionType } from "typesafe-actions";
+
+const { createAction } = deprecated;
 
 export const initialState: DeepReadonly<RootState> = {
   cnt: 0,
@@ -8,17 +11,33 @@ export const initialState: DeepReadonly<RootState> = {
   }
 };
 
-export const { actions, reducer } = createSlice({
-  name: "count",
-  initialState,
-  reducers: {
-    increment: state => ({ ...state, cnt: state.cnt + 1 }),
-    decrement: state => ({ ...state, cnt: state.cnt - 1 }),
-    setX: (state, { payload }: PayloadAction<RootState["cnt"]>) => ({
-      ...state,
-      cnt: payload
-    })
-  }
-});
+type State = typeof initialState;
 
-export type Actions = typeof actions;
+type P = {
+  foo: number;
+};
+
+export const actions = {
+  increment: createAction("increment"),
+  decrement: createAction("decrement"),
+  setX: createAction("setX", action => (p: P) => action({ foo: p.foo }))
+};
+
+export type Actions = ActionType<typeof actions>;
+
+// immer 使うとこんな感じ
+const reducers = {
+  increment: produce((state: Draft<State>) => {
+    state.cnt++;
+  }),
+  setX: produce(
+    (state: Draft<State>, action: ReturnType<typeof actions.setX>) => {
+      state.cnt = action.payload.foo;
+    }
+  )
+};
+
+export const reducer = createReducer<State, Actions>(initialState)
+  .handleAction(actions.increment, reducers.increment)
+  .handleAction(actions.decrement, s => ({ ...s, cnt: s.cnt - 1 }))
+  .handleAction(actions.setX, reducers.setX);

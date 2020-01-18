@@ -7,5 +7,5 @@ const useCallbackDispatch = (dispatch = useDispatch()) => (f: Function) => () =>
 export const useOperations = (w = useCallbackDispatch()) => ({
   onIncrement: w(actions.increment),
   onDecrement: w(actions.decrement),
-  set5: w(() => actions.setX(5))
+  set5: w(() => actions.setX({ foo: 5 }))
 });
