@@ -1,7 +1,5 @@
 import produce, { Draft } from "immer";
-import { deprecated, createReducer, ActionType } from "typesafe-actions";
-
-const { createAction } = deprecated;
+import { createAction, createReducer, ActionType } from "typesafe-actions";
 
 export const initialState: DeepReadonly<RootState> = {
   cnt: 0,
@@ -18,9 +16,9 @@ type P = {
 };
 
 export const actions = {
-  increment: createAction("increment"),
-  decrement: createAction("decrement"),
-  setX: createAction("setX", action => (p: P) => action({ foo: p.foo }))
+  increment: createAction("increment")(),
+  decrement: createAction("decrement")(),
+  setX: createAction("setX")<P>()
 };
 
 export type Actions = ActionType<typeof actions>;
@@ -29,6 +27,8 @@ export type Actions = ActionType<typeof actions>;
 const reducers = {
   increment: produce((state: Draft<State>) => {
     state.cnt++;
+    // ネスト深くても良い
+    state.foo.bar = 999;
   }),
   setX: produce(
     (state: Draft<State>, action: ReturnType<typeof actions.setX>) => {
