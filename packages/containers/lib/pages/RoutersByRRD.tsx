@@ -11,7 +11,8 @@ import {
   Count4,
   Count1Clone,
   Count3Clone,
-  Count3W
+  Count3W,
+  Count5
 } from ".";
 
 const useRedirect = (
@@ -88,6 +89,18 @@ export const Routers = () => {
           count4
         </a>
       </li>
+
+      <li>
+        <a
+          href=""
+          onClick={e => {
+            e.preventDefault();
+            useRedirect(history, "ee", "/count5");
+          }}
+        >
+          count5
+        </a>
+      </li>
     </ul>
   );
 };
@@ -128,3 +141,5 @@ export const Count3Page = ReactRouterDom(
   "/count3"
 );
 export const Count4Page = ReactRouterDom(Count4, "/count4");
+
+export const Count5Page = ReactRouterDom(Count5, "/count5");

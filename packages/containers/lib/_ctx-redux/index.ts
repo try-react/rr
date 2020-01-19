@@ -1,6 +1,19 @@
 import produce, { Draft } from "immer";
 import { createAction, createReducer, ActionType } from "typesafe-actions";
 
+/**
+ * App全体で使用する型
+ */
+type RootState = {
+  cnt: number;
+  gomi: string;
+  foo: { bar: number };
+};
+
+type DeepReadonly<T> = {
+  readonly [P in keyof T]: DeepReadonly<T[P]>;
+};
+
 export const initialState: DeepReadonly<RootState> = {
   cnt: 0,
   gomi: "stateがあっさりしすぎるので追加",
@@ -41,3 +54,12 @@ export const reducer = createReducer<State, Actions>(initialState)
   .handleAction(actions.increment, reducers.increment)
   .handleAction(actions.decrement, s => ({ ...s, cnt: s.cnt - 1 }))
   .handleAction(actions.setX, reducers.setX);
+
+// ------------------------------------------------------------------------
+import { createReducer as createReducer2 } from "react-use";
+import logger from "redux-logger";
+
+// https://github.com/streamich/react-use/issues/856
+// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+// @ts-ignore
+export const useReducer2 = createReducer2<State, Actions>(logger);

@@ -1,6 +1,9 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { useReducer } from "react";
 
+type DeepReadonly<T> = {
+  readonly [P in keyof T]: DeepReadonly<T[P]>;
+};
 type State = { cnt: number; debug: boolean };
 export const initialState: DeepReadonly<State> = {
   cnt: 0,
