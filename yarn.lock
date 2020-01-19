@@ -5710,6 +5710,11 @@ ignore@^4.0.6:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==
 
+immer@5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-5.3.2.tgz#e3a1c9f3550f925278fd86b8d2d644f7d5e9561b"
+  integrity sha512-wPWsSV0fv8iT7QQVs3rxBDWTbi5pHrVgnQv/McMfaRGJTLfQ3jFMEr08UibqS8hM17KCQXcjjYYzQzYe5e7BIA==
+
 immer@^4.0.1:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/immer/-/immer-4.0.2.tgz#9ff0fcdf88e06f92618a5978ceecb5884e633559"
@@ -9339,10 +9344,10 @@ react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-i
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
 
-react-navi@0.14.1:
-  version "0.14.1"
-  resolved "https://registry.yarnpkg.com/react-navi/-/react-navi-0.14.1.tgz#f90a4f1d642f2b8753befba797e351ff44e17da3"
-  integrity sha512-Xc5EqC+EXgcPLPlqHtPRpffvFEqktGf/SQMLPH04nM6MsOfnnc+plSVZDvj+zieuB2Ag+EfnyUNxiwSJkOWW0g==
+react-navi@0.14.3:
+  version "0.14.3"
+  resolved "https://registry.yarnpkg.com/react-navi/-/react-navi-0.14.3.tgz#60964017521e41c1c5e48782bb8cbab766ef8aa7"
+  integrity sha512-fht9sVtJKpiD6pk08+YNcGNLMlolm13pVWqwbQVgOqWZW/1OulhSn3pY0dyJ6PLUO56ieYk+kjou12yWSiDQEw==
   dependencies:
     "@types/history" "^4.6.2"
 
