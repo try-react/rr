@@ -2353,10 +2353,10 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-bit-bin@14.7.1:
-  version "14.7.1"
-  resolved "https://registry.yarnpkg.com/bit-bin/-/bit-bin-14.7.1.tgz#9ca21a5bd84a831de299ac53f89111098ef03fec"
-  integrity sha512-MsA5itOzqI4zmEFf++wpJZMyi6+Fh+nzFWSkfQWjL+KpijNqpQ520sh+8bFtPAAwBsjVYTjHIyrCOMCRpzVmOg==
+bit-bin@14.7.2:
+  version "14.7.2"
+  resolved "https://registry.yarnpkg.com/bit-bin/-/bit-bin-14.7.2.tgz#49a596ba201436761feecbe0585044dcec2657f5"
+  integrity sha512-QvHArG76Ae2u1fnC82EiILcuhnfkv9fWwWilzDcq2Ly4Wysc6SPAmnKIughpOn029TN3m8KDOaoD8s8SVaysOQ==
   dependencies:
     "@babel/runtime" "^7.4.5"
     "@teambit/gitconfig" "^2.0.6"
@@ -2366,7 +2366,7 @@ bit-bin@14.7.1:
     array-difference "^0.0.1"
     async-exit-hook "^2.0.1"
     babel-runtime "^6.23.0"
-    bit-javascript "2.1.4"
+    bit-javascript "2.1.5"
     bluebird "^3.5.3"
     chalk "^2.4.1"
     chokidar "^3.0.2"
@@ -2394,7 +2394,7 @@ bit-bin@14.7.1:
     is-glob "^4.0.0"
     isbinaryfile "^4.0.2"
     jfs "^0.2.6"
-    librarian "github:teambit/librarian#release"
+    librarian "^3.0.2"
     lodash.assignwith "^4.2.0"
     lodash.groupby "^4.6.0"
     lodash.merge "^4.6.2"
@@ -2450,10 +2450,10 @@ bit-bin@14.7.1:
     winston "^3.2.1"
     yn "^2.0.0"
 
-bit-javascript@2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/bit-javascript/-/bit-javascript-2.1.4.tgz#53b0d8184bc7c81c1c241419bab301a1fe343406"
-  integrity sha512-3C8pMPAISoLjtqW/AExEyEU1PWKgODRuUTtkfN6rGHcSjdDTvcKxpPULlqECgG8D+c9vvqlONuFfz/Si54BR5Q==
+bit-javascript@2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/bit-javascript/-/bit-javascript-2.1.5.tgz#2d646f2d0e07939120e1a5cf2bae4594cb3ae4c1"
+  integrity sha512-wy5+arpdyd4x8YCfPfCOfXtCAtucQpb4wQosekNgQRkBCDO6FfVnuMmLHVraDs+WvEKh5jMbDAVxQDEZyKzuDA==
   dependencies:
     "@babel/runtime" "^7.6.3"
     "@typescript-eslint/typescript-estree" "^2.3.2"
@@ -2487,7 +2487,7 @@ bit-javascript@2.1.4:
     sass-lookup "^3.0.0"
     stylable "5.2.2"
     stylus-lookup "^3.0.2"
-    typescript "3.6.3"
+    typescript "3.7.4"
     user-home "^2.0.0"
     vue-template-compiler "^2.5.13"
 
@@ -4845,6 +4845,11 @@ fast-extend@0.0.2:
   resolved "https://registry.yarnpkg.com/fast-extend/-/fast-extend-0.0.2.tgz#f5ec42cf40b9460f521a6387dfb52deeed671dbd"
   integrity sha1-9exCz0C5Rg9SGmOH37Ut7u1nHb0=
 
+fast-extend@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/fast-extend/-/fast-extend-1.0.2.tgz#3b8a5b09cbc8ff3d6d47eaf397398c0a643e441b"
+  integrity sha512-XXA9RmlPatkFKUzqVZAFth18R4Wo+Xug/S+C7YlYA3xrXwfPlW3dqNwOb4hvQo7wZJ2cNDYhrYuPzVOfHy5/uQ==
+
 fast-json-stable-stringify@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz#874bf69c6f404c2b5d99c481341399fd55892633"
@@ -5190,15 +5195,15 @@ fs-minipass@^2.0.0:
   dependencies:
     minipass "^3.0.0"
 
+fs-monkey@0.3.3, fs-monkey@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/fs-monkey/-/fs-monkey-0.3.3.tgz#7960bb2b1fa2653731b9d0e2e84812a7e8b3664a"
+  integrity sha512-FNUvuTAJ3CqCQb5ELn+qCbGR/Zllhf2HtwsdAtBi59s1WeCjKMT81fHcSu7dwIskqGVK+MmOrb7VOBlq3/SItw==
+
 fs-monkey@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/fs-monkey/-/fs-monkey-0.2.2.tgz#1c046adafeb715012d90f2ca3e951c70398d6138"
   integrity sha512-iGmwUuLYN6COLpwBqs9RfBREWkMbbRC7Xj+tsqcW/iaRI7KmUcjnScDLJxSIJo4DM85w76fdVWgagQHzClA0WA==
-
-fs-monkey@^0.3.0, fs-monkey@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/fs-monkey/-/fs-monkey-0.3.3.tgz#7960bb2b1fa2653731b9d0e2e84812a7e8b3664a"
-  integrity sha512-FNUvuTAJ3CqCQb5ELn+qCbGR/Zllhf2HtwsdAtBi59s1WeCjKMT81fHcSu7dwIskqGVK+MmOrb7VOBlq3/SItw==
 
 fs-write-stream-atomic@^1.0.8:
   version "1.0.10"
@@ -7337,15 +7342,16 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-"librarian@github:teambit/librarian#release":
-  version "1.0.0"
-  resolved "https://codeload.github.com/teambit/librarian/tar.gz/17d971e4b3f478a407bb7b589a4ec3a5e4dd6dc1"
+librarian@^3.0.2:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/librarian/-/librarian-3.1.0.tgz#491278e089e6e690a260a8e1ef5465739f123bc7"
+  integrity sha512-c9BvFm1slNFbnlKRcXzgjEzb21krVQmlKgSmWCMhSDqtaoOgSQWsInx6AgaLDf4Nt3LB7dKRzJB2RuQo1fkkpA==
   dependencies:
     fs-extra "^7.0.1"
     fs-monkey "^0.3.3"
     json-stable-stringify "^1.0.1"
     md5 "^2.2.1"
-    memfs "^2.15.5"
+    memfs "^3.0.3"
     node-ipc "^9.1.1"
     npm-logical-tree "^1.2.1"
     pacote "^9.5.0"
@@ -7357,7 +7363,7 @@ levn@^0.3.0, levn@~0.3.0:
     ssri "^6.0.1"
     tar "^5.0.5"
     tar-stream "^2.0.0"
-    unionfs "4.1.0"
+    unionfs "^4.2.1"
     yargs "^13.2.2"
 
 lines-and-columns@^1.1.6:
@@ -7846,13 +7852,13 @@ memfs@2.15.5:
     fast-extend "0.0.2"
     fs-monkey "^0.3.3"
 
-memfs@^2.15.5:
-  version "2.17.1"
-  resolved "https://registry.yarnpkg.com/memfs/-/memfs-2.17.1.tgz#bfcc11b6308214b4fb33eaca101132722d22e103"
-  integrity sha512-4kAcqibPAd8DN8/UIW/6OwvbhNq6MqwsQ0pxjo+2ZmxPlQAbn9TAepnRpdeYfw4Qq0Y+QqwE6wngLUowo2fcjg==
+memfs@^3.0.3:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/memfs/-/memfs-3.0.4.tgz#17997ec34d67d0a4756f6a34f2fefd13a8dbab08"
+  integrity sha512-OcZEzwX9E5AoY8SXjuAvw0DbIAYwUzV/I236I8Pqvrlv7sL/Y0E9aRCon05DhaV8pg1b32uxj76RgW0s5xjHBA==
   dependencies:
-    fast-extend "0.0.2"
-    fs-monkey "^0.3.3"
+    fast-extend "1.0.2"
+    fs-monkey "0.3.3"
 
 memoizee@^0.4.14:
   version "0.4.14"
@@ -11953,11 +11959,6 @@ typesafe-di@0.1.3:
   resolved "https://registry.yarnpkg.com/typesafe-di/-/typesafe-di-0.1.3.tgz#1d05047718de2343f14c83c832c5213d638ae7cf"
   integrity sha512-LdHB6YzhESaYlE2KVIglGmM3xwRfH17pixASMFflIBpOtkWYePZEL3qQ6UTf43KDtk0kya5MDzejR1O/PrqUIg==
 
-typescript@3.6.3:
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.3.tgz#fea942fabb20f7e1ca7164ff626f1a9f3f70b4da"
-  integrity sha512-N7bceJL1CtRQ2RiG0AQME13ksR7DiuQh/QehubYcghzv20tnh+MQnQIuJddTmsbqYj+dztchykemz0zFzlvdQw==
-
 typescript@3.7.4:
   version "3.7.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.4.tgz#1743a5ec5fef6a1fa9f3e4708e33c81c73876c19"
@@ -12034,19 +12035,19 @@ union@~0.5.0:
   dependencies:
     qs "^6.4.0"
 
-unionfs@4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/unionfs/-/unionfs-4.1.0.tgz#ac26f06b4faa3907c84e2930a6606209818bfe3a"
-  integrity sha512-KNDO1K0v/4Pdc+JbXMaLmjOP6yvGFK1Vm5o6GjqqSzA3qUJ3Y3o8cC9h8FsDRO+tYBrUecb3DcE/8/7JO1Xz8Q==
-  dependencies:
-    fs-monkey "^0.3.0"
-
 unionfs@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/unionfs/-/unionfs-3.0.2.tgz#629777294fa4c975153b02c901ae52950b6309a0"
   integrity sha512-PmPNhDthSs60NkvZOj9vUKGacNgZWXpimw5tkqNzNA5Aoan114ISjTnkBxii36b3upQQPKCflz55vQQMQ6z8WQ==
   dependencies:
     fs-monkey "^0.2.2"
+
+unionfs@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/unionfs/-/unionfs-4.2.1.tgz#d8e281ce65209ec1addfcecc1de42766ecc35447"
+  integrity sha512-QvdUyG3+m3Nh8YQfCV1mzOvBp7izXoEpGMZzqupKrzFY7cWuayKr8JRdN7CwNcNVjXYR2AZBeY+hStPKFUAT+w==
+  dependencies:
+    fs-monkey "^0.3.3"
 
 uniq@^1.0.1:
   version "1.0.1"
