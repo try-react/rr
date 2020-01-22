@@ -5,9 +5,10 @@
   schedule: ["every weekend"],
   labels: ["renovate"],
   automerge: true,
-  major: {
-    automerge: false
-  },
+  // 全部あげあげ
+  // major: {
+  //   automerge: false
+  // },
   lockFileMaintenance: {
     enabled: true
   }
