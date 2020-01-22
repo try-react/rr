@@ -1,5 +1,6 @@
 import { Machine } from "xstate";
 import { useMachine } from "@xstate/react";
+import { Design, Injector } from "typesafe-di";
 
 const toggleMachine = Machine(
   {

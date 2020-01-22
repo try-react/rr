@@ -1,6 +1,6 @@
 // 手抜き
 
-import React from "react";
+import React, { FC } from "react";
 import {
   useCount,
   useCount2,

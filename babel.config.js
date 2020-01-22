@@ -1,6 +1,13 @@
 const presets = [
   // ES2015以降の文法を使えるようにする定番プリセット
-  "@babel/preset-env",
+  [
+    "@babel/preset-env",
+    {
+      targets: {
+        node: "current"
+      }
+    }
+  ],
 
   // React用プリセット
   "@babel/preset-react",
