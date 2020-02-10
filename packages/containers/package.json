@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@app/components": "1.0.0",
-    "@code-dependency/cli": "0.3.6",
+    "@code-dependency/cli": "0.5.0",
     "@loadable/component": "5.12.0",
     "@testing-library/react-hooks": "3.2.1",
     "@types/react-router-dom": "5.1.3",
