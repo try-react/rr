@@ -8,6 +8,10 @@ Context API と Reduxを同時に使う為 (本来はやめたほうがいい)
 
 > (middlewaresは使ってない)
 
+
+<div><img src="https://user-images.githubusercontent.com/16768208/75222252-1fc09c80-57e7-11ea-8882-ff38d9f4ec0a.gif" width=700></div>
+
+
 <div><img src="https://user-images.githubusercontent.com/16768208/71544846-28ebe380-29c7-11ea-8c9a-78ca3a0274db.png" width=500></div>
 
 ### 詳細
