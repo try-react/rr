@@ -35,7 +35,7 @@ StateはJSON serializableなインターフェース（クラスや関数がな�
 
 Actionと前のstateから次のstateを生成する。
 
-## Store
+## Store or Context
 
 現在の状態を管理する
 
